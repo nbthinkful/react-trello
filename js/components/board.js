@@ -1,11 +1,11 @@
 import React from 'react'
-import List from './list'
+import ListContainer from './list-container'
 
 export default function Board(props) {
     let lists = [];
 
     for (let i=0; i<props.lists.length; i++) {
-        lists.push(<List title={props.lists[i]} cards="This is a card"/>);
+        lists.push(<ListContainer title={props.lists[i]}/>);
     }
 
     return (
